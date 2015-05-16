@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    
+    <servlet>
+        <servlet-name>VisitorServlet</servlet-name>
+        <servlet-class>com.vision.cloud.jpa.VisitorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VisitorServlet</servlet-name>
+        <url-pattern>/main</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>TestContext</servlet-name>
+        <servlet-class>com.vision.cloud.jpa.TestContextServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TestContext</servlet-name>
+        <url-pattern>/testcontext</url-pattern>
+    </servlet-mapping>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <login-config/>
+    
+      <resource-ref>
+      <description>DB Connection</description>
+      <res-ref-name>jdbc/kthx</res-ref-name>
+      <res-type>javax.sql.DataSource</res-type>
+      <res-auth>Container</res-auth>
+  </resource-ref>
+    
+</web-app>

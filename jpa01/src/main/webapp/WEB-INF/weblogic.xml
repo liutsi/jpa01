@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 2011, Oracle and/or its affiliates. All rights reserved. -->
+
+<!-- Copyright (c) 2011, 2013, Oracle and/or its affiliates. All rights reserved. -->
+<weblogic-web-app xmlns="http://www.bea.com/ns/weblogic/90"
+	xmlns:j2ee="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.bea.com/ns/weblogic/90 http://www.bea.com/ns/weblogic/90/weblogic-web-app.xsd">
+	<jsp-descriptor>
+		<verbose>false</verbose>
+	</jsp-descriptor>
+	<context-root>visitors</context-root>
+	<session-descriptor>
+		<cookie-path>visitors</cookie-path>
+	</session-descriptor>
+
+	<library-ref>
+		<library-name>jstl</library-name>
+	</library-ref>
+
+</weblogic-web-app>
